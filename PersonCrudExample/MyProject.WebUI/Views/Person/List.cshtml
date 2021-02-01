@@ -1,0 +1,33 @@
+<a asp-controller="Person" asp-action="" class="btn btn-success mb-2">Add Person</a>
+
+@model List<Person>
+
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">BirthDate</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(Person person in Model){
+        <tr>
+      <th scope="row">@person.Id</th>
+      <td>@person.FirstName</td>
+      <td>@person.LastName</td>
+      <td>@person.Gender</td>
+      <td>@person.BirthDate</td>
+      <td>
+          <a asp-controller="Person" asp-action="Index" asp-route-id="@person.Id" class="btn btn-warning">Update</a>
+          <a asp-controller="Person" asp-action="Delete" asp-route-id="@person.Id" class="btn btn-danger">Delete</a>
+      </td>
+    </tr>
+    }
+   
+  </tbody>
+</table>
+
