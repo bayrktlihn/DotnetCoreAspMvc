@@ -14,3 +14,5 @@ dotnet build
 dotnet clean
 
 dotnet add reference ProjectPath 
+
+dotnet run
