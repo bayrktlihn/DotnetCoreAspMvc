@@ -11,7 +11,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            DbContextOptions<MyDbContext> options = new DbContextOptionsBuilder<MyDbContext>().UseMySql("Server=localhost;Port=3306;Database=weqe;Uid=root;Pwd=1565915657;").Options;
+            DbContextOptions<MyDbContext> options = new DbContextOptionsBuilder<MyDbContext>().UseMySql("Server=localhost;Port=3306;Database=weqe;Uid=root;Pwd=parolagelecek;").Options;
 
             MyDbContext myDbContext = new MyDbContext(options);
 
