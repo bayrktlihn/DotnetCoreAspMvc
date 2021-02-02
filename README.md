@@ -2,6 +2,7 @@
 
 ## Basit Dotnet Komutlari
 dotnet new classlib -o FolderName -f netcore
+
 dotnet ef migrations add MigrationName
 
 dotnet ef migraionts remove
