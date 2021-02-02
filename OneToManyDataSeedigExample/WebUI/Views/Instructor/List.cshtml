@@ -1,0 +1,9 @@
+@model List<Instructor>
+
+
+@foreach (Instructor instructor in Model)
+{
+    @instructor.FirstName<br>
+    @instructor.LastName<br>
+    @instructor.Email <hr>
+}
